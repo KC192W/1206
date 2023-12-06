@@ -19,7 +19,7 @@ end.pos = gregexpr("</tr>", txt_new)
 i = 1
 sub.start.pos = start.pos[[1]][i]
 sub.end.pos = end.pos[[1]][i] + attr(end.pos[[1]], "match.length")[i] - 1
-#sub_txt = substr(txt_new, sub.start.pos+26, sub.end.pos-11)
+#sub_txt = substr(txt_new, sub.start.pos+27, sub.end.pos-11)
 
 sub_txt = gsub('等候掛號人數：', '', sub_txt)
 sub_txt = gsub('</?tr>', '', sub_txt)
